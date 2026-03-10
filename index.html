@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+</head>
+
+<body class="page">
+    <div class="page__container">
+        <section class="goods">
+            <article class="goods__item good-card" data-slider-images='[
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 1 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 2 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 3 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 4 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 5 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 6 фото"}
+                ]'>
+                <header class="good-card__header">
+                    <div class="good-card__zoom">
+                        <button class="good-card__zoom-button" type="button" aria-label="Увеличить изображение" data-zoom-button>
+                            <svg class="good-card__icon good-card__icon_zoom" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-resize"></use>
+                            </svg>
+                        </button>
+                    </div>
+            
+                    <div class="good-card__nav">
+                        <button class="good-card__nav-button" type="button" aria-label="Предыдущее изображение" data-nav-prev>
+                            <svg class="good-card__icon good-card__icon_prev" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+            
+                        <button class="good-card__nav-button" type="button" aria-label="Следующее изображение" data-nav-next>
+                            <svg class="good-card__icon good-card__icon_next" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+            
+                    <div class="good-card__description">Описание товара</div>
+            
+                    <img class="good-card__image" data-slide-image>
+                </header>
+            
+                <div class="good-card__content">
+                    <div class="pagination good-card__pagination">
+                        <button class="pagination__button pagination__button--active" type="button"
+                            data-pagination-index="0"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="1"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="2"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="3"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="4"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="5"></button>
+                    </div>
+            
+                    <div class="good-card__info">
+                        <div class="good-card__article">
+                            <span class="good-card__article-label">Артикул</span>
+                            <span class="good-card__article-separator">—</span>
+                            <span class="good-card__article-value">4607</span>
+                        </div>
+            
+                        <h2 class="good-card__title">
+                            Угловая бежевая кухня на заказ с матовыми фасадами в современном стиле «Нарцисс»
+                        </h2>
+                    </div>
+            
+                    <div class="good-card__materials">
+                        <span class="good-card__materials-title">Варианты материалов</span>
+            
+                        <div class="good-card__materials-list">
+                            <button class="good-card__material-button good-card__material-button--active" type="button">ПВХ</button>
+                            <button class="good-card__material-button" type="button">Эмаль</button>
+                            <button class="good-card__material-button" type="button">Пластик</button>
+                            <button class="good-card__material-button" type="button">Массив</button>
+                        </div>
+                    </div>
+            
+                    <div class="good-card__purchase">
+                        <div class="good-card__price-block">
+                            <span class="good-card__price-label">Цена от</span>
+                            <span class="good-card__price-value">515 700 ₽</span>
+            
+                            <div class="good-card__meter-price">
+                                <span class="good-card__meter-price-label">Погонный метр от</span>
+                                <span class="good-card__meter-price-separator">—</span>
+                                <span class="good-card__meter-price-value">30 000 ₽</span>
+                            </div>
+                        </div>
+            
+                        <div class="good-card__order">
+                            <button class="good-card__order-button" type="button">Заказать</button>
+                        </div>
+                    </div>
+            
+                    <div class="good-card__footer">
+                        <button class="good-card__likes-button" type="button">
+                            <svg class="good-card__icon good-card__icon_heart" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-like"></use>
+                            </svg>
+                            <span class="good-card__likes-count">57</span>
+                        </button>
+            
+                        <div class="good-card__footer-action">
+                            <a href="/calc" class="good-card__calc-button" target="_blank" rel="noopener noreferrer">
+                                Рассчитать стоимость
+                                <svg class="good-card__icon good-card__icon_right" aria-hidden="true">
+                                    <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="goods__item good-card" data-slider-images='[
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 1 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 2 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 3 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 4 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 5 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 6 фото"}
+                ]'>
+                <header class="good-card__header">
+                    <div class="good-card__zoom">
+                        <button class="good-card__zoom-button" type="button" aria-label="Увеличить изображение" data-zoom-button>
+                            <svg class="good-card__icon good-card__icon_zoom" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-resize"></use>
+                            </svg>
+                        </button>
+                    </div>
+            
+                    <div class="good-card__nav">
+                        <button class="good-card__nav-button" type="button" aria-label="Предыдущее изображение" data-nav-prev>
+                            <svg class="good-card__icon good-card__icon_prev" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+            
+                        <button class="good-card__nav-button" type="button" aria-label="Следующее изображение" data-nav-next>
+                            <svg class="good-card__icon good-card__icon_next" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+            
+                    <div class="good-card__description">Описание товара</div>
+            
+                    <img class="good-card__image" data-slide-image>
+                </header>
+            
+                <div class="good-card__content">
+                    <div class="pagination good-card__pagination">
+                        <button class="pagination__button pagination__button--active" type="button"
+                            data-pagination-index="0"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="1"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="2"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="3"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="4"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="5"></button>
+                    </div>
+            
+                    <div class="good-card__info">
+                        <div class="good-card__article">
+                            <span class="good-card__article-label">Артикул</span>
+                            <span class="good-card__article-separator">—</span>
+                            <span class="good-card__article-value">4607</span>
+                        </div>
+            
+                        <h2 class="good-card__title">
+                            Угловая бежевая кухня на заказ с матовыми фасадами в современном стиле «Нарцисс»
+                        </h2>
+                    </div>
+            
+                    <div class="good-card__materials">
+                        <span class="good-card__materials-title">Варианты материалов</span>
+            
+                        <div class="good-card__materials-list">
+                            <button class="good-card__material-button good-card__material-button--active" type="button">ПВХ</button>
+                            <button class="good-card__material-button" type="button">Эмаль</button>
+                            <button class="good-card__material-button" type="button">Пластик</button>
+                            <button class="good-card__material-button" type="button">Массив</button>
+                        </div>
+                    </div>
+            
+                    <div class="good-card__purchase">
+                        <div class="good-card__price-block">
+                            <span class="good-card__price-label">Цена от</span>
+                            <span class="good-card__price-value">515 700 ₽</span>
+            
+                            <div class="good-card__meter-price">
+                                <span class="good-card__meter-price-label">Погонный метр от</span>
+                                <span class="good-card__meter-price-separator">—</span>
+                                <span class="good-card__meter-price-value">30 000 ₽</span>
+                            </div>
+                        </div>
+            
+                        <div class="good-card__order">
+                            <button class="good-card__order-button" type="button">Заказать</button>
+                        </div>
+                    </div>
+            
+                    <div class="good-card__footer">
+                        <button class="good-card__likes-button" type="button">
+                            <svg class="good-card__icon good-card__icon_heart" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-like"></use>
+                            </svg>
+                            <span class="good-card__likes-count">57</span>
+                        </button>
+            
+                        <div class="good-card__footer-action">
+                            <a href="/calc" class="good-card__calc-button" target="_blank" rel="noopener noreferrer">
+                                Рассчитать стоимость
+                                <svg class="good-card__icon good-card__icon_right" aria-hidden="true">
+                                    <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="goods__item good-card" data-slider-images='[
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 1 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 2 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 3 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 4 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 5 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 6 фото"}
+                ]'>
+                <header class="good-card__header">
+                    <div class="good-card__zoom">
+                        <button class="good-card__zoom-button" type="button" aria-label="Увеличить изображение" data-zoom-button>
+                            <svg class="good-card__icon good-card__icon_zoom" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-resize"></use>
+                            </svg>
+                        </button>
+                    </div>
+            
+                    <div class="good-card__nav">
+                        <button class="good-card__nav-button" type="button" aria-label="Предыдущее изображение" data-nav-prev>
+                            <svg class="good-card__icon good-card__icon_prev" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+            
+                        <button class="good-card__nav-button" type="button" aria-label="Следующее изображение" data-nav-next>
+                            <svg class="good-card__icon good-card__icon_next" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+            
+                    <div class="good-card__description">Описание товара</div>
+            
+                    <img class="good-card__image" data-slide-image>
+                </header>
+            
+                <div class="good-card__content">
+                    <div class="pagination good-card__pagination">
+                        <button class="pagination__button pagination__button--active" type="button"
+                            data-pagination-index="0"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="1"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="2"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="3"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="4"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="5"></button>
+                    </div>
+            
+                    <div class="good-card__info">
+                        <div class="good-card__article">
+                            <span class="good-card__article-label">Артикул</span>
+                            <span class="good-card__article-separator">—</span>
+                            <span class="good-card__article-value">4607</span>
+                        </div>
+            
+                        <h2 class="good-card__title">
+                            Угловая бежевая кухня на заказ с матовыми фасадами в современном стиле «Нарцисс»
+                        </h2>
+                    </div>
+            
+                    <div class="good-card__materials">
+                        <span class="good-card__materials-title">Варианты материалов</span>
+            
+                        <div class="good-card__materials-list">
+                            <button class="good-card__material-button good-card__material-button--active" type="button">ПВХ</button>
+                            <button class="good-card__material-button" type="button">Эмаль</button>
+                            <button class="good-card__material-button" type="button">Пластик</button>
+                            <button class="good-card__material-button" type="button">Массив</button>
+                        </div>
+                    </div>
+            
+                    <div class="good-card__purchase">
+                        <div class="good-card__price-block">
+                            <span class="good-card__price-label">Цена от</span>
+                            <span class="good-card__price-value">515 700 ₽</span>
+            
+                            <div class="good-card__meter-price">
+                                <span class="good-card__meter-price-label">Погонный метр от</span>
+                                <span class="good-card__meter-price-separator">—</span>
+                                <span class="good-card__meter-price-value">30 000 ₽</span>
+                            </div>
+                        </div>
+            
+                        <div class="good-card__order">
+                            <button class="good-card__order-button" type="button">Заказать</button>
+                        </div>
+                    </div>
+            
+                    <div class="good-card__footer">
+                        <button class="good-card__likes-button" type="button">
+                            <svg class="good-card__icon good-card__icon_heart" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-like"></use>
+                            </svg>
+                            <span class="good-card__likes-count">57</span>
+                        </button>
+            
+                        <div class="good-card__footer-action">
+                            <a href="/calc" class="good-card__calc-button" target="_blank" rel="noopener noreferrer">
+                                Рассчитать стоимость
+                                <svg class="good-card__icon good-card__icon_right" aria-hidden="true">
+                                    <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="goods__item good-card" data-slider-images='[
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 1 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 2 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 3 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 4 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 5 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 6 фото"}
+                ]'>
+                <header class="good-card__header">
+                    <div class="good-card__zoom">
+                        <button class="good-card__zoom-button" type="button" aria-label="Увеличить изображение" data-zoom-button>
+                            <svg class="good-card__icon good-card__icon_zoom" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-resize"></use>
+                            </svg>
+                        </button>
+                    </div>
+            
+                    <div class="good-card__nav">
+                        <button class="good-card__nav-button" type="button" aria-label="Предыдущее изображение" data-nav-prev>
+                            <svg class="good-card__icon good-card__icon_prev" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+            
+                        <button class="good-card__nav-button" type="button" aria-label="Следующее изображение" data-nav-next>
+                            <svg class="good-card__icon good-card__icon_next" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+            
+                    <div class="good-card__description">Описание товара</div>
+            
+                    <img class="good-card__image" data-slide-image>
+                </header>
+            
+                <div class="good-card__content">
+                    <div class="pagination good-card__pagination">
+                        <button class="pagination__button pagination__button--active" type="button"
+                            data-pagination-index="0"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="1"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="2"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="3"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="4"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="5"></button>
+                    </div>
+            
+                    <div class="good-card__info">
+                        <div class="good-card__article">
+                            <span class="good-card__article-label">Артикул</span>
+                            <span class="good-card__article-separator">—</span>
+                            <span class="good-card__article-value">4607</span>
+                        </div>
+            
+                        <h2 class="good-card__title">
+                            Угловая бежевая кухня на заказ с матовыми фасадами в современном стиле «Нарцисс»
+                        </h2>
+                    </div>
+            
+                    <div class="good-card__materials">
+                        <span class="good-card__materials-title">Варианты материалов</span>
+            
+                        <div class="good-card__materials-list">
+                            <button class="good-card__material-button good-card__material-button--active" type="button">ПВХ</button>
+                            <button class="good-card__material-button" type="button">Эмаль</button>
+                            <button class="good-card__material-button" type="button">Пластик</button>
+                            <button class="good-card__material-button" type="button">Массив</button>
+                        </div>
+                    </div>
+            
+                    <div class="good-card__purchase">
+                        <div class="good-card__price-block">
+                            <span class="good-card__price-label">Цена от</span>
+                            <span class="good-card__price-value">515 700 ₽</span>
+            
+                            <div class="good-card__meter-price">
+                                <span class="good-card__meter-price-label">Погонный метр от</span>
+                                <span class="good-card__meter-price-separator">—</span>
+                                <span class="good-card__meter-price-value">30 000 ₽</span>
+                            </div>
+                        </div>
+            
+                        <div class="good-card__order">
+                            <button class="good-card__order-button" type="button">Заказать</button>
+                        </div>
+                    </div>
+            
+                    <div class="good-card__footer">
+                        <button class="good-card__likes-button" type="button">
+                            <svg class="good-card__icon good-card__icon_heart" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-like"></use>
+                            </svg>
+                            <span class="good-card__likes-count">57</span>
+                        </button>
+            
+                        <div class="good-card__footer-action">
+                            <a href="/calc" class="good-card__calc-button" target="_blank" rel="noopener noreferrer">
+                                Рассчитать стоимость
+                                <svg class="good-card__icon good-card__icon_right" aria-hidden="true">
+                                    <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="goods__item good-card" data-slider-images='[
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 1 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 2 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 3 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 4 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 5 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 6 фото"}
+                ]'>
+                <header class="good-card__header">
+                    <div class="good-card__zoom">
+                        <button class="good-card__zoom-button" type="button" aria-label="Увеличить изображение" data-zoom-button>
+                            <svg class="good-card__icon good-card__icon_zoom" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-resize"></use>
+                            </svg>
+                        </button>
+                    </div>
+            
+                    <div class="good-card__nav">
+                        <button class="good-card__nav-button" type="button" aria-label="Предыдущее изображение" data-nav-prev>
+                            <svg class="good-card__icon good-card__icon_prev" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+            
+                        <button class="good-card__nav-button" type="button" aria-label="Следующее изображение" data-nav-next>
+                            <svg class="good-card__icon good-card__icon_next" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+            
+                    <div class="good-card__description">Описание товара</div>
+            
+                    <img class="good-card__image" data-slide-image>
+                </header>
+            
+                <div class="good-card__content">
+                    <div class="pagination good-card__pagination">
+                        <button class="pagination__button pagination__button--active" type="button"
+                            data-pagination-index="0"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="1"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="2"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="3"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="4"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="5"></button>
+                    </div>
+            
+                    <div class="good-card__info">
+                        <div class="good-card__article">
+                            <span class="good-card__article-label">Артикул</span>
+                            <span class="good-card__article-separator">—</span>
+                            <span class="good-card__article-value">4607</span>
+                        </div>
+            
+                        <h2 class="good-card__title">
+                            Угловая бежевая кухня на заказ с матовыми фасадами в современном стиле «Нарцисс»
+                        </h2>
+                    </div>
+            
+                    <div class="good-card__materials">
+                        <span class="good-card__materials-title">Варианты материалов</span>
+            
+                        <div class="good-card__materials-list">
+                            <button class="good-card__material-button good-card__material-button--active" type="button">ПВХ</button>
+                            <button class="good-card__material-button" type="button">Эмаль</button>
+                            <button class="good-card__material-button" type="button">Пластик</button>
+                            <button class="good-card__material-button" type="button">Массив</button>
+                        </div>
+                    </div>
+            
+                    <div class="good-card__purchase">
+                        <div class="good-card__price-block">
+                            <span class="good-card__price-label">Цена от</span>
+                            <span class="good-card__price-value">515 700 ₽</span>
+            
+                            <div class="good-card__meter-price">
+                                <span class="good-card__meter-price-label">Погонный метр от</span>
+                                <span class="good-card__meter-price-separator">—</span>
+                                <span class="good-card__meter-price-value">30 000 ₽</span>
+                            </div>
+                        </div>
+            
+                        <div class="good-card__order">
+                            <button class="good-card__order-button" type="button">Заказать</button>
+                        </div>
+                    </div>
+            
+                    <div class="good-card__footer">
+                        <button class="good-card__likes-button" type="button">
+                            <svg class="good-card__icon good-card__icon_heart" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-like"></use>
+                            </svg>
+                            <span class="good-card__likes-count">57</span>
+                        </button>
+            
+                        <div class="good-card__footer-action">
+                            <a href="/calc" class="good-card__calc-button" target="_blank" rel="noopener noreferrer">
+                                Рассчитать стоимость
+                                <svg class="good-card__icon good-card__icon_right" aria-hidden="true">
+                                    <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="goods__item good-card" data-slider-images='[
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 1 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 2 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 3 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 4 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 5 фото"},
+                    {"src":"./img/kitchen.jpg","alt":"Кухня 6 фото"}
+                ]'>
+                <header class="good-card__header">
+                    <div class="good-card__zoom">
+                        <button class="good-card__zoom-button" type="button" aria-label="Увеличить изображение" data-zoom-button>
+                            <svg class="good-card__icon good-card__icon_zoom" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-resize"></use>
+                            </svg>
+                        </button>
+                    </div>
+            
+                    <div class="good-card__nav">
+                        <button class="good-card__nav-button" type="button" aria-label="Предыдущее изображение" data-nav-prev>
+                            <svg class="good-card__icon good-card__icon_prev" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+            
+                        <button class="good-card__nav-button" type="button" aria-label="Следующее изображение" data-nav-next>
+                            <svg class="good-card__icon good-card__icon_next" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+            
+                    <div class="good-card__description">Описание товара</div>
+            
+                    <img class="good-card__image" data-slide-image>
+                </header>
+            
+                <div class="good-card__content">
+                    <div class="pagination good-card__pagination">
+                        <button class="pagination__button pagination__button--active" type="button"
+                            data-pagination-index="0"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="1"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="2"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="3"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="4"></button>
+                        <button class="pagination__button" type="button" data-pagination-index="5"></button>
+                    </div>
+            
+                    <div class="good-card__info">
+                        <div class="good-card__article">
+                            <span class="good-card__article-label">Артикул</span>
+                            <span class="good-card__article-separator">—</span>
+                            <span class="good-card__article-value">4607</span>
+                        </div>
+            
+                        <h2 class="good-card__title">
+                            Угловая бежевая кухня на заказ с матовыми фасадами в современном стиле «Нарцисс»
+                        </h2>
+                    </div>
+            
+                    <div class="good-card__materials">
+                        <span class="good-card__materials-title">Варианты материалов</span>
+            
+                        <div class="good-card__materials-list">
+                            <button class="good-card__material-button good-card__material-button--active" type="button">ПВХ</button>
+                            <button class="good-card__material-button" type="button">Эмаль</button>
+                            <button class="good-card__material-button" type="button">Пластик</button>
+                            <button class="good-card__material-button" type="button">Массив</button>
+                        </div>
+                    </div>
+            
+                    <div class="good-card__purchase">
+                        <div class="good-card__price-block">
+                            <span class="good-card__price-label">Цена от</span>
+                            <span class="good-card__price-value">515 700 ₽</span>
+            
+                            <div class="good-card__meter-price">
+                                <span class="good-card__meter-price-label">Погонный метр от</span>
+                                <span class="good-card__meter-price-separator">—</span>
+                                <span class="good-card__meter-price-value">30 000 ₽</span>
+                            </div>
+                        </div>
+            
+                        <div class="good-card__order">
+                            <button class="good-card__order-button" type="button">Заказать</button>
+                        </div>
+                    </div>
+            
+                    <div class="good-card__footer">
+                        <button class="good-card__likes-button" type="button">
+                            <svg class="good-card__icon good-card__icon_heart" aria-hidden="true">
+                                <use href="/img/icons/sprite.svg#icon-like"></use>
+                            </svg>
+                            <span class="good-card__likes-count">57</span>
+                        </button>
+            
+                        <div class="good-card__footer-action">
+                            <a href="/calc" class="good-card__calc-button" target="_blank" rel="noopener noreferrer">
+                                Рассчитать стоимость
+                                <svg class="good-card__icon good-card__icon_right" aria-hidden="true">
+                                    <use href="/img/icons/sprite.svg#icon-arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+    
+    <script src="./js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+</body>
+
+</html>
